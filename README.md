@@ -40,25 +40,19 @@ To simulate the execution of binary instructions, follow these steps:
 3. Call the `simulate()` method on the simulator instance to execute the instructions.
 
 4. After simulation, you can access the current state of registers and flags using the `registers` and `flags` attributes of the simulator instance.
-
+## Simulate the execution of instructions
+1. python3 Simulator.py
+2. enter all the instructions line by line
+3. press Ctrl+Z to get the output
 ## Example
 
 Here's an example code snippet that demonstrates how to use the binary instruction simulator:
 
 ```python
 # Define the binary instructions
-binary_instructions = [
     0b0000000000101011,  # add R1, R2, R3
     0b0000100100101011,  # rs R2, $4
     0b0010000000110010,  # ld R0, 1100100
     0b1001000000000100   # jlt 00000100
-]
 
-# Simulate the execution of instructions
-1. python3 Simulator.py
-2. enter all the instructions line by line
-3. press Ctrl+Z to get the output
 
-# Access the state of registers and flags
-registers = simulator.registers
-flags = simulator.flags
